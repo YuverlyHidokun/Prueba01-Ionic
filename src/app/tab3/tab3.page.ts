@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  startDate: string | null = null;
+  endDate: string | null = null;
+  differenceInDays: number | null = null;
 
-  constructor() {}
-
+  calculateDays() {
+    if (this.startDate && this.endDate) {
+      const start = new Date(this.startDate);
+      const end = new Date(this.endDate);
+      const differenceInTime = end.getTime() - start.getTime();
+      this.differenceInDays = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+    }
+  }
 }
