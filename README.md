@@ -38,4 +38,4 @@ Haz push a la rama (git push origin feature/nueva-caracteristica).
 Abre un Pull Request.
 
 Contacto
-Si tienes preguntas o comentarios, no dudes en contactarme a través de tu_correo@gmail.com.
+Si tienes preguntas o comentarios, no dudes en contactarme a través de yuverlyverdezoto@gmail.com
