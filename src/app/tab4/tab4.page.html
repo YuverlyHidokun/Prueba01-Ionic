@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 4
+      Cálculo de Raíces
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,31 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 4</ion-title>
+      <ion-title size="large">Raíces de la Ecuación Cuadrática</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 4 page"></app-explore-container>
+  <ion-item>
+    <ion-label position="stacked">Coeficiente a</ion-label>
+    <ion-input type="number" [(ngModel)]="a"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Coeficiente b</ion-label>
+    <ion-input type="number" [(ngModel)]="b"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Coeficiente c</ion-label>
+    <ion-input type="number" [(ngModel)]="c"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="calcularRaices()">Calcular Raíces</ion-button>
+
+  <div *ngIf="raiz1 !== null || raiz2 !== null || error">
+    <h2>Resultados:</h2>
+    <p *ngIf="raiz1 !== null">Raíz 1: {{ raiz1 }}</p>
+    <p *ngIf="raiz2 !== null">Raíz 2: {{ raiz2 }}</p>
+    <p *ngIf="error">{{ error }}</p>
+  </div>
 </ion-content>
