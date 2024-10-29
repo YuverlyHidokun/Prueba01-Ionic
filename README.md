@@ -1,7 +1,6 @@
+# Creación de una aplicación básica con Ionic
 
-# Creacion de una aplicacion basica con ionic
-
-Creacion de una aplicacion usando las herramientas de ionic para crear 4 tabs
+Creación de una aplicación usando las herramientas de Ionic para crear 4 tabs.
 
 ## Características
 
@@ -24,6 +23,19 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
    ```bash
    git clone https://github.com/tu_usuario/nombre_del_repositorio.git
 
+2. Accede al directorio del proyecto:
+   ```bash
+   cd nombre_del_repositorio
+
+3. Instala las dependencias necesarias:
+   ```bash
+   npm install
+
+3. Inicia la aplicación:
+   ```bash
+   ionic serve
+
+Esto abrirá la aplicación en tu navegador en http://localhost:8100.
 
 ## Uso
 Este codigo se puede utilizar para lo que mas se acomode, ya sea para modifcarlo y agregar cosas nuevas o simplemente para aprender de este.
